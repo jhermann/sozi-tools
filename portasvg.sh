@@ -38,7 +38,7 @@ case "_$1" in
         : >"$log"
         rm portable/*.svg 2>/dev/null || :
         if $use_xvfb; then
-            xvfb-run -a -n 42 -e "$log" "$0" *.svg
+            xvfb-run -a -n 42 -s " -extension RANDR " -e "$log" "$0" *.svg
         else
             "$0" *.svg
         fi
@@ -47,6 +47,10 @@ case "_$1" in
     
     _*)
         set -e
+        if $use_xvfb; then
+            xhost +localhost >/dev/null
+            xhost +$(hostname -f) >/dev/null
+        fi
         for name in "$@" ; do 
             portable="portable/$name"
             echo "$name" "»" "$portable"
