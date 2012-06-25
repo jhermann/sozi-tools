@@ -34,6 +34,8 @@
     - Call the script with just a Sozi document to list the contained frames
    
 """
+# TODO: make it into an inkscape extension
+# TODO: read the titles from the title template node (multi-line) so we need no interface
 import os
 import re
 import sys
