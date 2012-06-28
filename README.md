@@ -9,8 +9,8 @@ The resulting files have no more references to resources in the local filesystem
 and also render faster in common browsers (especially important for Sozi documents).
 To use it, you need to have Inkscape and xvfb installed.
 
-**autoframe.py** simplifies the work needed to add a lot of frames to a document, so that you just need to call the 
-Sozi extension only once, to put the new frames added into the desired order and set any special attributes, instead 
+**autoframe.py** simplifies the work needed to add a lot of frames to a document, so that you need to call the 
+Sozi extension just once, to put the new frames added into the desired order and set any special attributes, instead 
 of doing that for each single frame. See the module docstring in the script for more details on how to prepare your
 document and calling it. 
 You also need to have lxml available ("aptitude install python-lxml", or "aptitude install libxml2-dev libxslt-dev" 
