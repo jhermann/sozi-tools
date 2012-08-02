@@ -96,12 +96,12 @@ def main():
     if titlefile is None:
         # Just list the frames
         for idx, frame in sorted(frames.iteritems()):
-            print "%3d %-15s %s → %s" % (
+            print (u"%3d %-15s %s → %s" % (
                 idx, 
                 frame.attrib["id"],
                 frame.attrib[NS_SOZI + "title"], 
                 frame.attrib[NS_SOZI + "refid"],
-            )
+            )).encode("utf-8")
         return
 
     # Find template elements
