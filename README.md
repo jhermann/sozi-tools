@@ -29,7 +29,7 @@ $ ./autoframe.py autoframe.svg
   1 frame2          Automate → autoframe-1340627041
   2 frame3          Be happy! → autoframe-1340627044
   3 frame1          Life, the Universe and Everything → rect2985-2
-```sh
+```
 
 ## Links
  * http://inkscape.org/
